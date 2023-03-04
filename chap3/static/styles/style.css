@@ -68,3 +68,28 @@
     align-items: center;
 }
     
+#review{
+    background-image: url(../../assets/top-score-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh ;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.7,) inset;
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+    box-shadow: ;
+}
+
+.card{
+    border-radius: .75rem;
+}
+
+.card-body h5, .card-body h6{
+    display: inline;
+}
