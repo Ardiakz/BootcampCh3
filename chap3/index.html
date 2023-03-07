@@ -13,25 +13,25 @@
 <body>
     <section id="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand text-white">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
           <div id="menu bar">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Work <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">WORK<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
               </li>
             </ul>
           </div>
@@ -39,33 +39,36 @@
           <div id="sign bar">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Sign Up <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">SIGN UP<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">LOGIN<span class="sr-only">(current)</span></a>
               </li>
             </ul>
           </div>
       </nav>
 
       <header id="cover">
-       <div class="d-flex flex-column align-items-center">
+       <div class="d-flex flex-column align-items-center justify-content-center vh-100">
         <h1 class="text-white mb-5">PLAY TRADITIONAL GAME</h1>
         <h5 class="text-white mb-5">Experience new traditional game play</h5>
         <button type="button" class="btn btn-warning">PLAY NOW</button>
-        <p>
+        <p style="position: absolute; bottom: 0;" class="font-weight-bold text-white">
           THE STORY
         </p>
+        <i class="fa fa-caret-down"></i>
        </div>
       </header>
     </section>
 
     <section id="gallery">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-white">What's so special?</h5>
-          <h1 class="text-white">THE GAMES</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-white">What's so special?</h5>
+            <h1 class="text-white">THE GAMES</h1>
         </div>
+      </div>
         <div class="col-md-8">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -93,6 +96,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          </div>
         </div>
       </div>
     </section>
@@ -100,7 +104,7 @@
     <section id="features">
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div></div>
+          <div class="col-md-6"></div>
           <div class="col-md-6">
             <div class="text-white mb-5">
               <h5>What'so special?</h5>
@@ -108,12 +112,19 @@
             </div>
             <div class="text-white">
               <ul class="game-list">
-                <li class="">
+                <li class="game-item mb-5 active">
                   <h5>TRADITIONAL GAMES</h5>
                   <p>If you miss your childhood, we provide many traditional games here</p>
                 </li>
+                <li class="game-item mb-5 inactive">
+                  <h5>GAME SUIT</h5>
+                </li>
+                <li class="game-item mb-5 inactive">
+                  <h5>TBD</h5>
+                </li>
               </ul>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -153,7 +164,29 @@
         </div>
       </div>
     </section>
-    <section id="newsletter"></section>
+
+    <section id="newsletter" class="d-flex align-items-center">
+      <div class="container text-white">
+        <div class="row">
+          <div id="newsletter-bg">
+            <img class="img-fluid" src="../chap3/assets/skull.png" alt="skull">
+          </div>
+          <div id="newsletter-text">
+            <p>Stay in touch with us!</p>
+            <h1>SUBSCRIBE</h1>
+            <p>In order to start receiving news, you need to enter your email address and everything else will be taken care of by us. We will send emails about information of the game. We promise we won't spamming you!</p>
+            <div class="container">
+              <form class="row">
+                <div class="form-label-group col-md-6 mb-3 p-md-1 p-0">
+                  <input type="email" id="inputEmail" class="form-control form-binar" placeholder="Your email address" value="example@address.com" disabled>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="footer"></section>
 
     <!-- Optional JavaScript -->
