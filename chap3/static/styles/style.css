@@ -97,7 +97,7 @@
 
 .card{
     background-color: #222222;
-    border-radius: .75rem;
+    border-radius: 5rem;
 }
 
 .card-body h5, .card-body h6{
@@ -107,7 +107,7 @@
 .card-body h6 {
     position: relative;
     top: 25px;
-    left: -95;
+    left: -95px;
 }
 
 #newsletter {
@@ -152,4 +152,10 @@
     background-color: #3f3f3f !important;
     border: 1px solid #3f3f3f;
     
+}
+  
+.footer-basic{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
